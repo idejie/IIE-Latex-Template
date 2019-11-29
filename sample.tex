@@ -1,0 +1,203 @@
+%-------------------------------------------------------------------%
+%							                                                                                                           %
+%	Template: Insitute of Information Enginering ,  China Acadamey of Science (IIE,CAS)%
+%							                                                                                                           %
+%	                                        Author: idejie (github@idejie)			                                   %
+%							                                                                                                           %
+%	                                          Date: 29th November 2019			                                    %
+%							                                                                                                           %
+%							                    Inspired by UIBK                                                             %
+%-------------------------------------------------------------------%
+
+\documentclass{beamer}
+\usetheme{IIECAS} %Unofficial IIECAS Template
+
+\usepackage[utf8]{inputenc}
+\usepackage{default}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{fontenc}
+%\usepackage[default]{comfortaa}
+
+
+
+
+%for weekly papers share meeting
+
+\author[Dejie Yang]{Dejie Yang}
+\title[\textit{DJSRH}] {\tiny \\  Deep Joint-Semantics Reconstructing Hashing for Large-Scale Unsupervised Cross-Modal Retrieval }
+\newcommand{\conference}{ICCV2019}
+\subtitle{}
+\newcommand{\paperauthors}{\tiny $Shupeng Su^{\dagger } Zhisheng Zhong^{\dagger } Chao Zhang^{\ast}$ }
+\newcommand{\paperinsitiude}{Key Laboratory of Machine Perception (MOE), School of EECS, Peking University}
+\institute[UCAS]{University of China Academy of Science\\Insitute of Information Enginering, China Acadamey of Science }
+\date{2019.12}
+
+\begin{document}
+
+%titlepage without header/footer and framenumbering
+
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+\end{frame}
+\setbeamercolor{background canvas}{bg=WHITE}
+\begin{frame}{Outline}
+	\tableofcontents
+\end{frame}
+
+
+%show table of contents at the beginning of every section
+\AtBeginSection[]{
+\begin{frame}<beamer>
+ \frametitle{Outline}
+ \tableofcontents[currentsection]
+\end{frame}
+}
+
+
+\section{Motivation}
+\begin{frame}{Motivation}
+\begin{itemize}
+\item Here you can see an itemization
+\item Here you can see an itemization
+\item Here you can see an itemization
+\begin{itemize}
+\item It has items
+\item It has items
+\begin{itemize}
+\item It has items
+\item The items are below each other
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\section{Joint-Semantics Reconstructing Hashing}
+\subsection{Joint-Semantics Matrix}
+\begin{frame}{Joint-Semantics Matrix}
+\begin{center}
+ {Top right of the slide shows subsections\huge }
+\end{center}
+\end{frame}
+
+
+\subsection{Reconstructing with Binary Codes}
+\begin{frame}{Reconstructing with Binary Codes}
+\begin{enumerate}
+\item Here you can see an enumeration
+\item It has items
+\item The items are numbered
+\end{enumerate}
+\[
+	f(x)=\sum_{i=0}^\infty \frac{f^{(i)}(x_0)}{i!}(x-x_0)^i
+\]
+\end{frame}
+
+
+\section{Experiments}
+\subsection{Datasets}
+\begin{frame}{Datasets}
+\begin{block}{Lorem Ipsum}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+\end{block}
+\begin{block}{Observation}
+Simmons Dormitory is composed of brick.
+\end{block} 
+\end{frame}
+
+\subsection{Evaluation Criterion}
+\begin{frame}{Evaluation Criterion}
+	\begin{block}{Lorem Ipsum}
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+		At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+		At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	\end{block}
+	\begin{block}{Observation}
+		Simmons Dormitory is composed of brick.
+	\end{block} 
+\end{frame}
+
+\subsection{Implementation Details}
+\begin{frame}{Implementation Details}
+	\begin{block}{Lorem Ipsum}
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+		At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+		At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	\end{block}
+	\begin{block}{Observation}
+		Simmons Dormitory is composed of brick.
+	\end{block} 
+\end{frame}
+
+\subsection{Retrieval Performance}
+\begin{frame}{Retrieval Performance}
+	\begin{block}{Lorem Ipsum}
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+		At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+		At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	\end{block}
+	\begin{block}{Observation}
+		Simmons Dormitory is composed of brick.
+	\end{block} 
+\end{frame}
+
+\subsection{Ablation Study}
+\begin{frame}{Ablation Study}
+	\begin{block}{Lorem Ipsum}
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+		At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+		At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	\end{block}
+	\begin{block}{Observation}
+		Simmons Dormitory is composed of brick.
+	\end{block} 
+\end{frame}
+
+
+
+\section{Think $\&$ Conclusion}
+\begin{frame}{Think $\&$Conclusion}
+	\begin{center}
+		\begin{block}{Paragraph function}
+			Write a function 'paragraph' that constructs a picture of width w of some text t, such that the content splits into as many lines as needed to fit into a paragraph of w columns. 
+		\end{block}
+		\begin{block}{paragraph.ml}
+			{\small  \lstinputlisting[language=ml]{src/paragraph.ml}  }
+		\end{block}
+	\end{center}
+\end{frame}
+
+\section{Code}
+\begin{frame}{Github Code}
+\begin{center}
+\begin{block}{Paragraph function}
+ Write a function 'paragraph' that constructs a picture of width w of some text t, such that the content splits into as many lines as needed to fit into a paragraph of w columns. 
+\end{block}
+\begin{block}{paragraph.ml}
+{\small  \lstinputlisting[language=ml]{src/paragraph.ml}  }
+\end{block}
+\end{center}
+\end{frame}
+
+
+%final slide
+\begin{frame}[plain,noframenumbering]
+ \begin{beamercolorbox}[wd=\paperwidth, ht=1.4cm,rounded=true,shadow=true]{final slide}
+      \begin{center}
+	{\huge Thank you for your attention!}
+      \end{center}
+ \end{beamercolorbox}
+\end{frame}
+
+
+
+\end{document}
+
